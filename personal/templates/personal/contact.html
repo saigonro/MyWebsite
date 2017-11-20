@@ -1,0 +1,17 @@
+{% extends "personal/header.html" %}
+
+{% block content %}
+
+<h3 style="padding-bottom: 20px;">Let's work together</h3>
+
+<form method="POST" action="http://formspree.io/vietnamezul@gmail.com">
+  <input style="float: left; width: 48%; margin-right: 4%;" name="name" placeholder="Your name" type="text">
+  <input style="float: left; width: 48%;" name="email" placeholder="Your email" type="email">
+  <textarea style="float: left; width: 100%; margin-top: 20px;" name="message" rows="15" placeholder="Your message"></textarea>
+  <button style="float: left; margin-top: 20px;" type="submit">Send</button>
+</form>
+
+<!--
+    {% include "personal/includes/snippet.html" %}
+-->
+{% endblock %}
